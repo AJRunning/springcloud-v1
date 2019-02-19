@@ -1,0 +1,23 @@
+server:
+  port: 8001
+
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.runningsss.cloud.entities
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+
+spring:
+  application:
+    name: microservicecloud-dept 
+  datasource:
+    username: root
+    password: running123
+    url: jdbc:mysql://47.112.28.183:3306/cloudDB01
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+
+
+
+
