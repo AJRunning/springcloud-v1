@@ -15,6 +15,21 @@ spring:
     url: jdbc:mysql://47.112.28.183:3306/cloudDB01
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7000.com:7000/eureka/
+  instance:
+    instance-id: microservicecloud-dept8001
+    prefer-ip-address: true     #访问路径可以显示IP地址
+
+info:
+  app.name: runningsss-microservicecloud
+  company.name: www.runningsss.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
+
 
 
 
