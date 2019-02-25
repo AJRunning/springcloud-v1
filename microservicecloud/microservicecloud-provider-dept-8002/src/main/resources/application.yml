@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8002
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
@@ -12,7 +12,7 @@ spring:
   datasource:
     username: root
     password: running123
-    url: jdbc:mysql://47.112.28.183:3306/cloudDB01
+    url: jdbc:mysql://47.112.28.183:3306/cloudDB02
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 eureka:
@@ -20,7 +20,7 @@ eureka:
     service-url:
       defaultZone: http://eureka7000.com:7000/eureka/,http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
   instance:
-    instance-id: microservicecloud-dept8001
+    instance-id: microservicecloud-dept8002
     prefer-ip-address: true     #访问路径可以显示IP地址
 
 info:
