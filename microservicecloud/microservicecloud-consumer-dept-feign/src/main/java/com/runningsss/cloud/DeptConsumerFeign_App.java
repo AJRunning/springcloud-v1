@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients(value = "com.runningsss.cloud")
+@EnableFeignClients(basePackages = "com.runningsss.cloud")
 @ComponentScan("com.runningsss.cloud")
 public class DeptConsumerFeign_App {
 
