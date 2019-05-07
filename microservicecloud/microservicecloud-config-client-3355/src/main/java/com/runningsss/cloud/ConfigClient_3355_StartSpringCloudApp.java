@@ -2,16 +2,15 @@ package com.runningsss.cloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * @author liqings
- * @date 2019-02-20
+ * @date 2019-05-06
  */
 @SpringBootApplication
-@EnableEurekaServer
-public class EurekaServer7001_App {
+public class ConfigClient_3355_StartSpringCloudApp {
+
     public static void main(String[] args) {
-        SpringApplication.run(EurekaServer7001_App.class,args);
+        SpringApplication.run(ConfigClient_3355_StartSpringCloudApp.class,args);
     }
 }
